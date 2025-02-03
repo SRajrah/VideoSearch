@@ -1,0 +1,27 @@
+{
+  "name": "videosearch",
+  "version": "1.0.0",
+  "description": "This repository contains code for a video description generation and video semantic search project.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix apps/frontend\" \"npm run dev --prefix apps/backend\"",
+    "build": "npm run build --prefix apps/frontend",
+    "start": "npm run start --prefix apps/frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
